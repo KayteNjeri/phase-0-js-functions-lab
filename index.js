@@ -1,7 +1,29 @@
+function calculateTax (amount) {
+   let taxValue = 0.10 * amount;
+   return taxValue;
+}
 
 
+function convertToUpperCase (text) {
+    return text.toUpperCase();
+}
 
+function findMaximum(num1, num2) {
+    if (num1 > num2) {
+        return num1;
+    } else {
+        return num2;
+    };
+}
 
+function isPalindrome (word) {
+   return word === word.split("").reverse().join("");
+}
+
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
+  let discount = originalPrice * (discountPercentage/100);
+  return originalPrice - discount;
+}
 
 // This is required for the test to function properly  
 module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
